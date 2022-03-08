@@ -1,4 +1,4 @@
-const intToStr = (num: number, base: number = 10): string => {
+export const intToStr = (num: number, base: number = 10): string => {
   const convertString: string = '0123456789ABCDEF';
   if (num < base) return convertString[num];
 
