@@ -11,21 +11,27 @@
 
 ### Задача
 
-- [x] Реализовать функцию IntToStr переводящую число в строку.
+- [x] Реализовать функцию IntToStr переводящую число в строку
 
-  - Не использовать преобразование числа в строку _(явное или неявное)_, встроенное в среду исполнения.
-  - Желательно использовать ![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat).
-  - Будет плюсом возможность задать систему исчисления: десятеричная, двоичная, восьмеричная, шестнадцатеричная.
-  - Результатом может быть репозиторий ![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat), ссылка на ![JSFiddle Badge](https://img.shields.io/badge/JSFiddle-0084FF?logo=jsfiddle&logoColor=fff&style=flat) или что-то еще.
-  - Если у реализации есть какие-то ограничения, то указать их.
-  - Если есть идеи по улучшению текущей реализации, то описать их.
+  - Не использовать преобразование числа в строку _(явное или неявное)_, встроенное в среду исполнения
+  - Желательно использовать ![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
+  - Будет плюсом возможность задать систему исчисления: десятеричная, двоичная, восьмеричная, шестнадцатеричная
+  - Результатом может быть репозиторий ![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat), ссылка на ![JSFiddle Badge](https://img.shields.io/badge/JSFiddle-0084FF?logo=jsfiddle&logoColor=fff&style=flat) или что-то еще
+  - Если у реализации есть какие-то ограничения, то указать их
+  - Если есть идеи по улучшению текущей реализации, то описать их
 
 - [x] Реализовать Unit-тесты
 
-[К содержанию](#inttostr)
+[Наверх](#inttostr)
 
 ### Алгоритм
 
+[Наверх](#inttostr)
+
 ### Ограничения
 
+[Наверх](#inttostr)
+
 ### Идеи по улучшению
+
+[Наверх](#inttostr)
