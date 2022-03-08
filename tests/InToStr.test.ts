@@ -17,4 +17,7 @@ describe('intToStr should convert number:', () => {
     expect(intToStr(3, 2)).toBe('11');
     expect(intToStr(5, 2)).toBe('101');
   });
+  it(`num can't be a negative`, () => {
+    expect(intToStr(-1)).toBe(`'num' can't be a negative`);
+  });
 });
