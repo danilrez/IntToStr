@@ -1,32 +1,32 @@
-###### [Switch to 🇷🇺](https://github.com/danilrez/IntToStr/blob/main/README_ru.md#inttostr)
+###### [Switch to 🇷🇺](https://github.com/danilrez/IntToStr/blob/main/README_ru.md#switch-to-)
 
 # IntToStr
 
-## Содержание:
+## Content:
 
-1. [Постановка задачи](#задача)
-2. [Алгоритм](#алгоритм)
-3. [Ограничения](#ограничения)
-4. [Идеи по улучшению](#идеи-по-улучшению)
+1. [Description](#задача)
+2. [Algorithm](#алгоритм)
+3. [Restrictions](#ограничения)
+4. [Improvements](#идеи-по-улучшению)
 
 ---
 
-### Постановка задачи
+### Description
 
-- [x] Реализовать функцию **`IntToStr`** переводящую число в строку
+- [x] Implement the **`IntToStr`** function that converts a number to a string
 
-  - Не использовать преобразование числа в строку _(явное или неявное)_, встроенное в среду исполнения
-  - Желательно использовать ![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
-  - Возможность задать систему счисления: двоичная, восьмеричная, десятичная, шестнадцатеричная
-  - Результатом может быть: репозиторий ![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat), ссылка на ![JSFiddle Badge](https://img.shields.io/badge/JSFiddle-0084FF?logo=jsfiddle&logoColor=fff&style=flat) и т.д. и т.п.
-  - Если у реализации есть какие-то ограничения, указать их
-  - Если есть идеи по улучшению текущей реализации, описать их
+  - Don't use number-to-string conversion _(explicit or implicit)_ built-in the runtime
+  - Be great if you will use ![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=flat)
+  - Possibility of choosing a system of numeration: binary, octal, decimal, hexadecimal
+  - The result could be: a ![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat) repository, a link to a ![JSFiddle Badge](https://img.shields.io/badge/JSFiddle-0084FF?logo=jsfiddle&logoColor=fff&style=flat), etc.
+  - If the implementation has any restrictions, describe them
+  - If you have ideas to improve the current implementation, describe them
 
-- [x] Реализовать Unit-тесты
+- [x] Implement Unit-tests
 
-[Наверх](#inttostr)
+[:arrow_up: Top](#inttostr)
 
-### Алгоритм
+### Algorithm
 
 Рассмотрим конкретный пример, используя число **123** и основание **10** _(система счисления, в которую будем конвертировать)_.
 
@@ -71,18 +71,18 @@
 
 Решение представлено в файле **[`IntToStr_v1.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v1.ts)**
 
-[Наверх](#inttostr)
+[:arrow_up: Top](#inttostr)
 
-### Ограничения
+### Restrictions
 
-1. Функция конвертирует числа **> 0**
-2. Возможное основание _(система счисления, в которую будем конвертировать)_: от **2** до **16**
-3. Если основание не задано, по умолчанию конвертирует в десятичную систему счисления
+1. The function converts only numbers **> 0**
+2. Possible base _(system of numeration to which we will convert)_: from **2** to **16**
+3. If base is not set, converts to decimal by default
 
-[Наверх](#inttostr)
+[:arrow_up: Top](#inttostr)
 
-### Идеи по улучшению
+### Improvements
 
-В качастве альтернативы, для улучшения текущей реализации, можно использовать рекурсию. Решение представлено в файле **[`IntToStr_v2.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v2.ts)**
+An alternative way to improve the current implementation, recursion can be used. The solution is presented in the file **[`IntToStr_v2.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v2.ts)**
 
-[Наверх](#inttostr)
+[:arrow_up: Top](#inttostr)
