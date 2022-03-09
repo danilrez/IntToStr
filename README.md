@@ -1,4 +1,4 @@
-<p align="right"><a href="#">switch to 🇷🇺</a></p>
+<p align="right"><h7><a href="https://github.com/danilrez/IntToStr/blob/main/README_ru.md#inttostr">switch to 🇷🇺</a></h7></p>
 
 # IntToStr
 
