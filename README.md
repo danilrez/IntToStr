@@ -1,4 +1,4 @@
-<p align="right"><h7><a href="https://github.com/danilrez/IntToStr/blob/main/README_ru.md#inttostr">switch to 🇷🇺</a></h7></p>
+###### [Switch to 🇷🇺](https://github.com/danilrez/IntToStr/blob/main/README_ru.md#inttostr)
 
 # IntToStr
 
