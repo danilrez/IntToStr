@@ -1,5 +1,3 @@
-<p align="right"><a href="#">switch to 🇷🇺</a></p>
-
 # IntToStr
 
 ## Содержание:
