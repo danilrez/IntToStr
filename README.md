@@ -4,10 +4,10 @@
 
 ## Content:
 
-1. [Description](#задача)
-2. [Algorithm](#алгоритм)
-3. [Restrictions](#ограничения)
-4. [Improvements](#идеи-по-улучшению)
+1. [Description](#description)
+2. [Algorithm](#algorithm)
+3. [Restrictions](#restrictions)
+4. [Improvements](#improvements)
 
 ---
 
@@ -28,48 +28,48 @@
 
 ### Algorithm
 
-Рассмотрим конкретный пример, используя число **123** и основание **10** _(система счисления, в которую будем конвертировать)_.
+Let's look at an example using the number **123** and the base **10** _(system of numeration to which we will convert)_.
 
-Нам понадобится:
+We'll need:
 
-1. Переменная _(наш маппинг)_, которая будет соответствовать первым десяти цифрам + латинским буквам, для шестнадцатеричного представления
+1. Variable _(mapping)_, which will match the first ten digits + latin letters, for the hexadecimal representation
 
 ```TypeScript
     const convertString: string = '0123456789ABCDEF'
 ```
 
-2. Массив, хранящий промежуточные результаты
+2. Array that's storing intermediate results
 
 ```TypeScript
     let res: string[] = [];
 ```
 
-Конвертировать число, меньшее десяти, в его строковый эквивалент очень просто: нужно всего лишь найти его в нашем маппинге. Например, для числа **7** строка будет **convertString[7]** или **"7"**. Если число будет больше **10** _(основания)_, нам необходимо организовать разбиение числа. Получается, что нам необходимо разбить число **123** на три цифры **1**, **2** и **3**, в этом случае конвертировать их будет не трудно.
+Converting a number less than ten to its string equivalent is so easy: you just need to find it in our mapping. For example, for the number **7** the string would be **convertString[7]** or **"7"**. If the number is greater than **10** _(base)_, we need to split the number. It turns out that we need to split the number **123** into three digits **1**, **2**, and **3**, in which case it'll not be so difficult to convert them.
 
-Исходя из этого наш алгоритм будет иметь три шага:
+Based on this, our algorithm will have three steps:
 
-1. Разбить первоначальное число на последовательность цифр.
-2. Конвертировать каждое число в строку.
-3. Слить получившиеся односимвольные строки в одну.
+1. Split the original number into a sequence of digits.
+2. Convert each number to a string.
+3. Merge the resulting one-character strings into one.
 
-Необходимо придумать, как изменять состояние и продвигаться в строну базового случая. Тут нам на помощь приходит _**деление нацело с получением остатка**_. Разделив **123** на **10** нацело, получим **12** и **3** в остатке. В результате:
+We need to figure out how to change the state and move towards the base case. This is a case where _**Integer Division and Modulus**_ helps us. Dividing **123** by **10**, we get **12** and **3** in the remainder. As a result:
 
-1. Остаток меньше нашего основания, следовательно, сразу же может быть преобразован в строку.
-2. У нас есть число, меньшее первоначального и приближающееся к базовому случаю.
+1. The remainder is less than our base, therefore, can be immediately converted to a string
+2. We have a number that is smaller than the original and approaches the base case
 
-Теперь нужно перевести в строковое представление **12**.
-Вновь использовав деление нацело, получим **1** и **2** в остатке. Задача свелась базовому случаю, поскольку удовлетворяет условию **`число < основания`**.
+Now we need to convert to string representation **12**.
+Using integer division again, we get **1** and **2** in the remainder. The problem has been reduced to the base case because it satisfies the condition **`number < base`**.
 
-Описанный пример в виде диаграммы:
+The described example is in the form of a diagram:
 ![concept](https://raw.githubusercontent.com/danilrez/IntToStr/main/src/images/concept.png)
 
-Пройдём по алгоритму ещё раз, но рассмотрим пример, в котором будем конвертировать число **10** в двоичную строку _('1010')_.
+Let's go through the algorithm again, but consider an example in which we will convert the number **10** into a binary string _('1010')_.
 
 ![binary](https://raw.githubusercontent.com/danilrez/IntToStr/main/src/images/binary.png)
 
-Обе иллюстрации показывают, что мы получаем искомый результат, но в неверном порядке. Поэтому нам необходимо записывать результат конвертации в массив, хранящий промежуточный результат, используя метод **unshift()**. В этом случае, каждая последующая итерация будет добавляться результат конвертации в наш массив на первую позицию, и мы получим ожидаемый результат.
+Both of these illustrations show us that we get the desired result but in the wrong order. Because of that, we need to write the result of the conversion to an array that stores the intermediate result using the **unshift()** method. In this case, each iteration will add the result of the conversion to our array to the first position, and we will get the expected result.
 
-Решение представлено в файле **[`IntToStr_v1.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v1.ts)**
+The solution is presented in the file **[`IntToStr_v1.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v1.ts)**
 
 [:arrow_up: Top](#inttostr)
 
