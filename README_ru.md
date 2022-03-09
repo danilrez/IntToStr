@@ -24,7 +24,7 @@
 
 - [x] Реализовать Unit-тесты
 
-[:arrow_up: Наверх](#inttostr)
+[:arrow_up: Наверх](#switch-to-)
 
 ### Алгоритм
 
@@ -71,7 +71,7 @@
 
 Решение представлено в файле **[`IntToStr_v1.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v1.ts)**
 
-[:arrow_up: Наверх](#inttostr)
+[:arrow_up: Наверх](#switch-to-)
 
 ### Ограничения
 
@@ -79,10 +79,10 @@
 2. Возможное основание _(система счисления, в которую будем конвертировать)_: от **2** до **16**
 3. Если основание не задано, по умолчанию конвертирует в десятичную систему счисления
 
-[:arrow_up: Наверх](#inttostr)
+[:arrow_up: Наверх](#switch-to-)
 
 ### Идеи по улучшению
 
 В качастве альтернативы, для улучшения текущей реализации, можно использовать рекурсию. Решение представлено в файле **[`IntToStr_v2.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v2.ts)**
 
-[:arrow_up: Наверх](#inttostr)
+[:arrow_up: Наверх](#switch-to-)

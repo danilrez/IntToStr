@@ -24,7 +24,7 @@
 
 - [x] Implement Unit-tests
 
-[:arrow_up: Top](#inttostr)
+[:arrow_up: Top](#switch-to-)
 
 ### Algorithm
 
@@ -71,7 +71,7 @@ Both of these illustrations show us that we get the desired result but in the wr
 
 The solution is presented in the file **[`IntToStr_v1.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v1.ts)**
 
-[:arrow_up: Top](#inttostr)
+[:arrow_up: Top](#switch-to-)
 
 ### Restrictions
 
@@ -79,10 +79,10 @@ The solution is presented in the file **[`IntToStr_v1.ts`](https://github.com/da
 2. Possible base _(system of numeration to which we will convert)_: from **2** to **16**
 3. If base is not set, converts to decimal by default
 
-[:arrow_up: Top](#inttostr)
+[:arrow_up: Top](#switch-to-)
 
 ### Improvements
 
 An alternative way to improve the current implementation, recursion can be used. The solution is presented in the file **[`IntToStr_v2.ts`](https://github.com/danilrez/IntToStr/blob/main/src/IntToStr_v2.ts)**
 
-[:arrow_up: Top](#inttostr)
+[:arrow_up: Top](#switch-to-)
