@@ -17,7 +17,6 @@ describe('IntToStr_v1 should convert number:', () => {
     expect(intToStr_v1(3, 2)).toBe('11');
     expect(intToStr_v1(5, 2)).toBe('101');
   });
-  it(`num can't be a negative`, () => {
-    expect(intToStr_v1(-1)).toBe(`'num' can't be a negative`);
-  });
+  it(`num can't be a negative`, () =>
+    expect(intToStr_v1(-1)).toBe(`'num' can't be a negative`));
 });
